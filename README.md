@@ -223,15 +223,153 @@ The reply IP is different.  This is the google.com IP address
   
 <h4>Block ICMP in the Linux VM, try to ping the Linux VM from the Windows VM</h4>
 
+<p>**we can do this in the Azure console
+
+  Select the Linux VM > search for “ Network Security Groups”
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Select inbound security rules > add > fill out the fields as follows: > add
+  <p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>    
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+    
+<p>Here is the new rule, it denies ping
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Go back to the cmd prompt on the Windows vm and ping the private IP 10.0.0.5 again
+The request timed out because the firewall for VM2 is blocking the ICMP request
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Go to Wireshark to view the traffic from this request
+There is only a request from 10.0.0.4 and no reply from 10.0.0.5
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>On the Windows VM, ping 10.0.0.5
+  
+      Ping 10.0.0.5 -t		***the ping should timeout
+  <p>
+ <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>Go to wireshark to check the ICMP traffic, 10.0.0.4 should display “request” with no reply from 10.0.0.5
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+ <p>Go to the Azure Linux VM (GTWS02) > Networking > Inbound Port Rules > click “block ICMP” rule
+   <p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     
+<p>Under Action select “Allow”		** this will enable ICMP traffic through the firewall
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>ICMP is allowed
+ <p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+   
+<p>Check the ping status and Wireshark traffic
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>10.0.0.4 is receiving a reply from 10.0.0.5
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<h5>Filter SSH traffic</h5>
+
+<p>Set the Wireshark filter for SSH
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Open Powershell as an administrator
+
+Log on to the Linux VM GTWS02 with the following command:
+
+	Ssh gterry@10.0.0.5		** the username and Private IP address
+	Answer yes to the logon question and enter the password for VM2
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>I am logged on to the Linux VM
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ 
+<p>On the Windows VM, go to Wireshark to see the SSH traffic 
+  <p>
+  img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ 
+<p>Go back to Powershell, type “exit” to close SSH
+<p>
+ <img src="" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+    
+<h5>Filter TCP Traffic</h5>
+
+<p>Here is the traffic for my Remote Desktop connection (RDP) on port 3389
+<p>
+    <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<h5>Filter DNS Traffic</h5>
+
+<p>Type "Dns" in the filter bar
+  <p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+    
+<p>In powershell do an nslookup for google.com
+Nslookup google.com
+<p>    
+     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Check the DNS traffic in Wireshark
+<p>
+     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>I looked up the google.com IP address and the query was captured by Wireshark
+<p>
+
+<h5>Follow the same procedure to filter  “UDP” traffic</h5>
 
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<h4></h4>
 
+<p>Wireshark show I got a response from the DNS server on port 53 for UDP protocol
+<p>     
+     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<h5>Filter RDP Traffic<h/5>
 
-<br />
+<p>Enter:  tcp.port == 3389  or type:  rdp
+
+Wireshark is displaying traffic from RDP port 3389
+<p>
+     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<h5>Filter DHCP Traffic</h5>
+  
+<p>In Powershell > ipconfig /renew		** request a new IP address from the DHCP server
+<p>
+     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Looking inside the Wireshark console, we can see that my VM 10.0.0.4 sent a DHCP Request and the DHCP server sent a reply called DHCP ACK.
+<p>
+     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<p>Lets try: ipconfig /release	*** the will free the current IP address
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>You may need to restart your VM, if possible DHCP will give you the same address
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Log back into the VM
+<p>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<h4>Conclusion,/h4>
+ 
+<p>In this lab I demonstrated how Wireshark can capture network traffic by filtering protocols or by selecting a specific port.
+I also showed how Wireshark can display blocked requests that have been denied by  the VM firewall.
+<p>
