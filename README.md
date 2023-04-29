@@ -5,9 +5,7 @@ In this lab I will create two Azure VMs and use Wireshark to analize traffic bet
 <img src="" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-
+<h1>/h1>
 
 <h2></h2>
 
