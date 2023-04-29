@@ -27,7 +27,7 @@ In this lab I will create two Azure VMs and use Wireshark to analize traffic bet
 - Log into the Windows VM “gtws01” with Remote Desktop
 - Install WireShark on the Windows virtual machine
 - Run wireshark and filter traffic by protocol
-- Block ICMP in the Windows firewall, try to ping the Linux computer
+- Block ICMP in the Linux VM, try to ping the Linux VM from the Windows VM
 - Enable ICMP in the Windows firewall, ping the Linux computer
 
 
@@ -182,14 +182,48 @@ Length - Length of the frame in bytes.
 
 <h4> Run wireshark and filter traffic by protocol</h4>
 
+<h5>Filter ICMP traffic</5>
 
+<p>In the filter field type: ICMP	*** this is the protocol that ping uses
+<p>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<p>Get the private IP address for the Linux VM, gtws02. 
+ <p>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+   
+<p>Using the Windows VM, open cmd prompt  and ping the Linux VM private IP address
+ <p>
+   <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+   
+<p>Ping 10.0.0.5
+<p>
+  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<h5>Go to the wireshark console to see the traffic that was captured from the ping</h5>
+
+<p>You can see the request from the source address which is the Windows VM with IP address 10.0.0.4
+The reply came from the Linux VM with the IP address 10.0.0.5
+The protocol is ICMP
+This is an echo request (Ping)
+<p>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<h5>Ping a website</h5>
+
+<p>From the cmd prompt, ping google.com
+<p>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+  <p>Go to the wireshark console
+We can see that the source request IP 10.0.0.4 is the Windows VM
+The reply IP is different.  This is the google.com IP address
+<p>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  
+<h4>Block ICMP in the Linux VM, try to ping the Linux VM from the Windows VM</h4>
+
+
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
