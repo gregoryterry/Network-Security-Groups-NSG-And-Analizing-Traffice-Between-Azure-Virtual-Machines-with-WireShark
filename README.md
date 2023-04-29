@@ -368,7 +368,7 @@ Wireshark is displaying traffic from RDP port 3389
 <p>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
-<h4>Conclusion,/h4>
+<h4>Conclusion</h4>
  
 <p>In this lab I demonstrated how Wireshark can capture network traffic by filtering protocols or by selecting a specific port.
 I also showed how Wireshark can display blocked requests that have been denied by  the VM firewall.
