@@ -2,7 +2,7 @@
 In this lab I will create two Azure VMs and use Wireshark to analize traffic between the to VMs.
 
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<img src="" alt="osTicket logo"/>
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
@@ -22,6 +22,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
+- Linux Ubuntu Server
 
 <h2>List of Prerequisites</h2>
 
