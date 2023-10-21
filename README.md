@@ -37,29 +37,41 @@ In this lab I will create two Azure VMs and use Wireshark to analize traffic bet
 In the search bar type “virtual machines”
 Create two virtual machines [+]  > Azure virtual machine
 
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
+<P>
+<img src="https://i.imgur.com/FnIeV0E.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<P>
 <p>Create a new resource group named:  WireSharkLab
 <p>
 
 <p>Create a Window 10 VM
 Use the following options:
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/EUdlV2Y.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<P>
+<img src="https://i.imgur.com/DRwoo9i.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<P>
+<img src="https://i.imgur.com/irH6tSP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+</P>
+<img src="https://i.imgur.com/DRwoo9i.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<P>
+<img src="https://i.imgur.com/irH6tSP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
+
+</P>
 <p>Make sure RDP port (3389) is selected and agree to the license term
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
+<img src="https://i.imgur.com/eawrNX0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<P>
 <p>Leave the default settings for disk > go to networking tab > review + create
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ikbaHaA.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Validation passed > create 
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nCoxn15.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>While deployment of the Windows VM is running, create the Linux VM
 
