@@ -306,7 +306,7 @@ There is only a request from 10.0.0.4 and no reply from 10.0.0.5
 
 <p>Set the Wireshark filter for SSH
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/I3R6uV1.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>Open Powershell as an administrator
 
@@ -315,51 +315,53 @@ Log on to the Linux VM GTWS02 with the following command:
 	Ssh gterry@10.0.0.5		** the username and Private IP address
 	Answer yes to the logon question and enter the password for VM2
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/oZIqy6Q.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>I am logged on to the Linux VM
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ljedtmf.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
  
 <p>On the Windows VM, go to Wireshark to see the SSH traffic 
   <p>
-  img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/1fqddtP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
  
 <p>Go back to Powershell, type “exit” to close SSH
 <p>
- <img src="" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-    
+ <img src="https://i.imgur.com/N5GpaDc.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<p>
+
+ 
 <h5>Filter TCP Traffic</h5>
 
 <p>Here is the traffic for my Remote Desktop connection (RDP) on port 3389
 <p>
-    <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+    <img src="https://i.imgur.com/GQHBUZw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h5>Filter DNS Traffic</h5>
 
 <p>Type "Dns" in the filter bar
   <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/h3V133B.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
     
 <p>In powershell do an nslookup for google.com
 Nslookup google.com
 <p>    
-     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/c4mFjl0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>Check the DNS traffic in Wireshark
 <p>
-     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/epUjtfZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>I looked up the google.com IP address and the query was captured by Wireshark
 <p>
 
 <h5>Follow the same procedure to filter  “UDP” traffic</h5>
 
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/jU2tjyq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Wireshark show I got a response from the DNS server on port 53 for UDP protocol
 <p>     
-     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/sJadqXs.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <h5>Filter RDP Traffic<h/5>
 
@@ -367,29 +369,29 @@ Nslookup google.com
 
 Wireshark is displaying traffic from RDP port 3389
 <p>
-     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/t5KbPMl.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <h5>Filter DHCP Traffic</h5>
   
 <p>In Powershell > ipconfig /renew		** request a new IP address from the DHCP server
 <p>
-     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/trehXQk.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>	    
   
 <p>Looking inside the Wireshark console, we can see that my VM 10.0.0.4 sent a DHCP Request and the DHCP server sent a reply called DHCP ACK.
 <p>
-     <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/mY52d2F.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Lets try: ipconfig /release	*** the will free the current IP address
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mY52d2F.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>You may need to restart your VM, if possible DHCP will give you the same address
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5tFFj1k.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>Log back into the VM
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ilicIRz.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <h4>Conclusion</h4>
  
@@ -397,10 +399,4 @@ Wireshark is displaying traffic from RDP port 3389
 I also showed how Wireshark can display blocked requests that have been denied by  the VM firewall.
 <p>
 
- <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>	
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
