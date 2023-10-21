@@ -57,9 +57,6 @@ Use the following options:
 <P>
 <img src="https://i.imgur.com/irH6tSP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
-
 </P>
 <p>Make sure RDP port (3389) is selected and agree to the license term
 <p>
@@ -74,20 +71,13 @@ Use the following options:
 <img src="https://i.imgur.com/nCoxn15.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>While deployment of the Windows VM is running, create the Linux VM
-
+<p>
+	
 Type Virtual machine in the search box > create [+]  Azure VM
 <p>
 <img src="https://i.imgur.com/5LVOUmX.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <P>
 	
- <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>	
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
-
 <p>Select the WireSharkLab resource group, put in the same zone as gtws01
 <p>
 <img src="https://i.imgur.com/dO9MDeR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -96,7 +86,8 @@ Type Virtual machine in the search box > create [+]  Azure VM
 <p>
 <img src="https://i.imgur.com/5Nd0tC0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>Administrator account
+<h4>Administrator account</h4>h4>
+<p>
 Select password for authentication > create a username and password
 <p>
 <img src="https://i.imgur.com/l5hNpT3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -105,12 +96,14 @@ Select password for authentication > create a username and password
 Select (ssh port 22)
 <p>
 <img src="https://i.imgur.com/ehVDVWB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
+<p>
+	
 <p>Select next > Leave the default disk settings > next for networking
 **both virtual machines are on the save subnet
 <p>
 <img src="https://i.imgur.com/Aywv8Zb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
+<p>
+	
 <p>Review + create > create
 <p>
 <img src="https://i.imgur.com/1ZgspGp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -118,22 +111,23 @@ Select (ssh port 22)
 <p>When deployment is complete, type “virtual machines”  in the search bar.  Here are the two new VMs
 <p>
 <img src="https://i.imgur.com/2L5jPoB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
+<p>
+	
 <h4>Log into the Windows VM “gtws01” with Remote Desktop</h4>
 
 <p>Click on gtws01 vm  > copy the public IP address
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Fm627Rj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Open Remote Desktop > paste the public IP address for gtws01 in the address field and enter your user name for this vm.
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SgdOBxc.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 <p>Enter your password for the Windows VM
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/24MnZTD.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<p>
+<img src="https://i.imgur.com/s9tQ3ZM.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 
 <p>Answer “yes” to have your pc discovered on the network
 <p>
@@ -394,3 +388,11 @@ Wireshark is displaying traffic from RDP port 3389
 <p>In this lab I demonstrated how Wireshark can capture network traffic by filtering protocols or by selecting a specific port.
 I also showed how Wireshark can display blocked requests that have been denied by  the VM firewall.
 <p>
+
+ <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>	
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
