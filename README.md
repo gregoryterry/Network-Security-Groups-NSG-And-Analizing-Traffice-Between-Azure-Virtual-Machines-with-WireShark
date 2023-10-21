@@ -141,14 +141,17 @@ Select (ssh port 22)
 
 <p>Browse to the wireshark exe file and install
 <p>
-<img src="https://i.imgur.com/nb6YlcQ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/yAvgz30.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nb6YlcQ.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<p>
+<img src="https://i.imgur.com/yAvgz30.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
 <p>Follow the prompts and select your desired options
 <p>
-<img src="https://i.imgur.com/yAvgz30.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/TnTmDRE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/LOJbzhB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yAvgz30.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<p>
+<img src="https://i.imgur.com/TnTmDRE.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<p>
+<img src="https://i.imgur.com/LOJbzhB.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 <p>
 	
 <p>Go to the desktop > start menu > right-click WireShark > more options > pin to taskbar > open wireshark from the taskbar
@@ -157,7 +160,7 @@ Select (ssh port 22)
 <img src="https://i.imgur.com/pAqfvgE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h4>Run wireshark and filter traffic by protocol</h4>
-<img src="https://i.imgur.com/2Ma404a.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2Ma404a.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <p>Select ethernet adapter to capture traffic
 <p>
@@ -169,7 +172,7 @@ Select (ssh port 22)
 
 No	 time		source		destination		protocol	length		info
 <p>
-<img src="https://i.imgur.com/edUGvin.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/edUGvin.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <h5>Here is a brief summary of the columns</h5>
 
@@ -236,7 +239,7 @@ This is an echo request (Ping)
 We can see that the source request IP 10.0.0.4 is the Windows VM
 The reply IP is different.  This is the google.com IP address
 <p>
-<img src="https://i.imgur.com/2u5CSc6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2u5CSc6.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <p>
 	
 <h4>Block ICMP in the Linux VM, try to ping the Linux VM from the Windows VM</h4>
@@ -267,7 +270,7 @@ The request timed out because the firewall for VM2 is blocking the ICMP request
 <p>Go to Wireshark to view the traffic from this request
 There is only a request from 10.0.0.4 and no reply from 10.0.0.5
 <p>
-<img src="https://i.imgur.com/2TfSBbq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2TfSBbq.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
   
 <p>On the Windows VM, ping 10.0.0.5
   
@@ -277,7 +280,7 @@ There is only a request from 10.0.0.4 and no reply from 10.0.0.5
 
 <p>Go to wireshark to check the ICMP traffic, 10.0.0.4 should display “request” with no reply from 10.0.0.5
 <p>
-  <img src="https://i.imgur.com/yjnSi1v.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/yjnSi1v.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
  <p>Go to the Azure Linux VM (GTWS02) > Networking > Inbound Port Rules > click “block ICMP” rule
    <p>
@@ -323,7 +326,7 @@ Log on to the Linux VM GTWS02 with the following command:
  
 <p>On the Windows VM, go to Wireshark to see the SSH traffic 
   <p>
- <img src="https://i.imgur.com/1fqddtP.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/1fqddtP.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
  
 <p>Go back to Powershell, type “exit” to close SSH
 <p>
@@ -335,7 +338,7 @@ Log on to the Linux VM GTWS02 with the following command:
 
 <p>Here is the traffic for my Remote Desktop connection (RDP) on port 3389
 <p>
-    <img src="https://i.imgur.com/GQHBUZw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+    <img src="https://i.imgur.com/GQHBUZw.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <h5>Filter DNS Traffic</h5>
 
@@ -350,7 +353,7 @@ Nslookup google.com
   
 <p>Check the DNS traffic in Wireshark
 <p>
-     <img src="https://i.imgur.com/epUjtfZ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/epUjtfZ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
   
 <p>I looked up the google.com IP address and the query was captured by Wireshark
 <p>
@@ -379,19 +382,19 @@ Wireshark is displaying traffic from RDP port 3389
   
 <p>Looking inside the Wireshark console, we can see that my VM 10.0.0.4 sent a DHCP Request and the DHCP server sent a reply called DHCP ACK.
 <p>
-     <img src="https://i.imgur.com/mY52d2F.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+     <img src="https://i.imgur.com/mY52d2F.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <p>Lets try: ipconfig /release	*** the will free the current IP address
 <p>
-<img src="https://i.imgur.com/mY52d2F.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mY52d2F.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
   
 <p>You may need to restart your VM, if possible DHCP will give you the same address
 <p>
-<img src="https://i.imgur.com/5tFFj1k.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5tFFj1k.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
   
 <p>Log back into the VM
 <p>
-<img src="https://i.imgur.com/ilicIRz.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ilicIRz.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
   
 <h4>Conclusion</h4>
  
