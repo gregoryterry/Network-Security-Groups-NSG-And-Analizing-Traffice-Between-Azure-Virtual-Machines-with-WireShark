@@ -2,7 +2,7 @@
 In this lab I will create two Azure VMs and use Wireshark to analize traffic between the to VMs.
 
 <p align="center">
-<img src="https://ibb.co/b5fhkss" alt="WireShark logo"/>
+<img src="" alt="WireShark logo"/>
 </p>
 
 <h1></h1>
