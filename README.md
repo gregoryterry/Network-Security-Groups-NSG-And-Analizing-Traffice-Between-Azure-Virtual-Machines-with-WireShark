@@ -77,38 +77,47 @@ Use the following options:
 
 Type Virtual machine in the search box > create [+]  Azure VM
 <p>
+<img src="https://i.imgur.com/5LVOUmX.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<P>
+	
+ <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>	
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
 
 <p>Select the WireSharkLab resource group, put in the same zone as gtws01
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dO9MDeR.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Select image:  Ubuntu server
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5Nd0tC0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Administrator account
 Select password for authentication > create a username and password
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/l5hNpT3.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Inbound rules
 Select (ssh port 22)
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ehVDVWB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Select next > Leave the default disk settings > next for networking
 **both virtual machines are on the save subnet
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Aywv8Zb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Review + create > create
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1ZgspGp.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>When deployment is complete, type “virtual machines”  in the search bar.  Here are the two new VMs
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2L5jPoB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h4>Log into the Windows VM “gtws01” with Remote Desktop</h4>
 
