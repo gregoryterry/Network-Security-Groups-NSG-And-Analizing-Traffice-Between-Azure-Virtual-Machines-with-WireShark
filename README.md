@@ -136,30 +136,32 @@ Select (ssh port 22)
 
 <p>On the Windows VM > open Microsoft Edge > type “WireShark”  in the search bar > download the 64 bit version
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BDx0PLQ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/PhUwoOS.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Browse to the wireshark exe file and install
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nb6YlcQ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yAvgz30.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Follow the prompts and select your desired options
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
+<img src="https://i.imgur.com/yAvgz30.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/TnTmDRE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/LOJbzhB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+	
 <p>Go to the desktop > start menu > right-click WireShark > more options > pin to taskbar > open wireshark from the taskbar
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ZXgBL87.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pAqfvgE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h4>Run wireshark and filter traffic by protocol</h4>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2Ma404a.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Select ethernet adapter to capture traffic
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/QtAoRYh.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h5>Wireshark is now installed and running</h5>
 
@@ -167,11 +169,11 @@ Select (ssh port 22)
 
 No	 time		source		destination		protocol	length		info
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/edUGvin.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h5>Here is a brief summary of the columns</h5>
 
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JRvdduO.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <p>No. -Frame number from the beginning of the pcap. The first frame is always 1.
 Time - Seconds broken down to the nanosecond from the first frame of the pcap. The first frame is always 0.000000.
@@ -193,7 +195,7 @@ Length - Length of the frame in bytes.
 
 <p>To hide or unhide a column, right-click the column and un-check the column in the list
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vtVjYKi.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <h4> Run wireshark and filter traffic by protocol</h4>
 
@@ -201,19 +203,19 @@ Length - Length of the frame in bytes.
 
 <p>In the filter field type: ICMP	*** this is the protocol that ping uses
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/vS364yr.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>Get the private IP address for the Linux VM, gtws02. 
  <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RVSZvPK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
    
 <p>Using the Windows VM, open cmd prompt  and ping the Linux VM private IP address
  <p>
-   <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/TGLBRDb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
    
 <p>Ping 10.0.0.5
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/gOqoMNi.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <h5>Go to the wireshark console to see the traffic that was captured from the ping</h5>
 
@@ -222,78 +224,84 @@ The reply came from the Linux VM with the IP address 10.0.0.5
 The protocol is ICMP
 This is an echo request (Ping)
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/6cIie1q.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <h5>Ping a website</h5>
 
 <p>From the cmd prompt, ping google.com
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/rIPRZqq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
   <p>Go to the wireshark console
 We can see that the source request IP 10.0.0.4 is the Windows VM
 The reply IP is different.  This is the google.com IP address
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-  
+<img src="https://i.imgur.com/2u5CSc6.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+	
 <h4>Block ICMP in the Linux VM, try to ping the Linux VM from the Windows VM</h4>
 
 <p>**we can do this in the Azure console
 
   Select the Linux VM > search for “ Network Security Groups”
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-  
+<img src="https://i.imgur.com/QBN1Xud.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+<p><img src="https://i.imgur.com/I5jf8b1.png" height="60%" width="60%" alt="Disk Sanitization Steps"/> 
+</p>  
+
 <p>Select inbound security rules > add > fill out the fields as follows: > add
   <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>    
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bNHvmCK.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>    
+<img src="https://i.imgur.com/SzkwCIF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
     
 <p>Here is the new rule, it denies ping
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Ga11iqU.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>Go back to the cmd prompt on the Windows vm and ping the private IP 10.0.0.5 again
 The request timed out because the firewall for VM2 is blocking the ICMP request
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/FJJ8xuz.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>Go to Wireshark to view the traffic from this request
 There is only a request from 10.0.0.4 and no reply from 10.0.0.5
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2TfSBbq.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>On the Windows VM, ping 10.0.0.5
   
       Ping 10.0.0.5 -t		***the ping should timeout
   <p>
- <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/AmXevoo.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <p>Go to wireshark to check the ICMP traffic, 10.0.0.4 should display “request” with no reply from 10.0.0.5
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/yjnSi1v.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
  <p>Go to the Azure Linux VM (GTWS02) > Networking > Inbound Port Rules > click “block ICMP” rule
    <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VMfRNQg.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
      
 <p>Under Action select “Allow”		** this will enable ICMP traffic through the firewall
 <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/HipT9i2.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/f7TeUnm.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>ICMP is allowed
  <p>
-<img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qKIw23R.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
    
 <p>Check the ping status and Wireshark traffic
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/J677lj0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
   
 <p>10.0.0.4 is receiving a reply from 10.0.0.5
 <p>
-  <img src="" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-  
+  <img src="https://i.imgur.com/lDFHD6d.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<p>
+
+ 
 <h5>Filter SSH traffic</h5>
 
 <p>Set the Wireshark filter for SSH
