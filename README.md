@@ -177,15 +177,15 @@ Select (ssh port 22)
 
 <img src="https://i.imgur.com/JRvdduO.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
-<p>No. -Frame number from the beginning of the pcap. The first frame is always 1.
-Time - Seconds broken down to the nanosecond from the first frame of the pcap. The first frame is always 0.000000.
-Source - Source address, commonly an IPv4, IPv6, or Ethernet address.
-Destination - Destination address, commonly an IPv4, IPv6, or Ethernet address.
-Protocol - Protocol used in the Ethernet frame, IP packet, or TCP segment (ARP, DNS, TCP, HTTP, etc.).
-Length - Length of the frame in bytes.
+<p>No. -Frame number from the beginning of the pcap. The first frame is always 1.<P></P>
+<P></P>Time - Seconds broken down to the nanosecond from the first frame of the pcap. The first frame is always 0.000000.
+<P></P>Source - Source address, commonly an IPv4, IPv6, or Ethernet address.
+<P></P>Destination - Destination address, commonly an IPv4, IPv6, or Ethernet address.
+<P></P>Protocol - Protocol used in the Ethernet frame, IP packet, or TCP segment (ARP, DNS, TCP, HTTP, etc.).
+<P></P>Length - Length of the frame in bytes.
 <p>
 
-<p>The most common columns that are monitored are:
+<h4>The most common columns that are monitored are:</h4>
 
 - Date & time in UTC
 - Source IP and source port
@@ -213,7 +213,7 @@ Length - Length of the frame in bytes.
    
 <p>Using the Windows VM, open cmd prompt  and ping the Linux VM private IP address
  <p>
-   <img src="https://i.imgur.com/TGLBRDb.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/TGLBRDb.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
    
 <p>Ping 10.0.0.5
 <p>
@@ -321,7 +321,7 @@ Log on to the Linux VM GTWS02 with the following command:
   
 <p>I am logged on to the Linux VM
 <p>
-  <img src="https://i.imgur.com/ljedtmf.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ljedtmf.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
  
 <p>On the Windows VM, go to Wireshark to see the SSH traffic 
   <p>
