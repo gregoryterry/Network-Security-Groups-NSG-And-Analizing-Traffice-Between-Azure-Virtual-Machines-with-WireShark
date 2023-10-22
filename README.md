@@ -75,7 +75,7 @@ Use the following options:
 	
 Type Virtual machine in the search box > create [+]  Azure VM
 <p>
-<img src="https://i.imgur.com/5LVOUmX.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5LVOUmX.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <P>
 	
 <p>Select the WireSharkLab resource group, put in the same zone as gtws01
@@ -110,14 +110,14 @@ Select (ssh port 22)
 
 <p>When deployment is complete, type “virtual machines”  in the search bar.  Here are the two new VMs
 <p>
-<img src="https://i.imgur.com/2L5jPoB.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2L5jPoB.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <p>
 	
 <h4>Log into the Windows VM “gtws01” with Remote Desktop</h4>
 
 <p>Click on gtws01 vm  > copy the public IP address
 <p>
-<img src="https://i.imgur.com/Fm627Rj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Fm627Rj.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
 <p>Open Remote Desktop > paste the public IP address for gtws01 in the address field and enter your user name for this vm.
 <p>
@@ -159,9 +159,6 @@ Select (ssh port 22)
 <img src="https://i.imgur.com/ZXgBL87.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/pAqfvgE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<h4>Run wireshark and filter traffic by protocol</h4>
-<img src="https://i.imgur.com/2Ma404a.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-
 <p>Select ethernet adapter to capture traffic
 <p>
 <img src="https://i.imgur.com/QtAoRYh.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
@@ -169,8 +166,10 @@ Select (ssh port 22)
 <h5>Wireshark is now installed and running</h5>
 
 <p>Wireshark displays:
-
-No	 time		source		destination		protocol	length		info
+<P>
+	
+<P>No	<P></P> time		<P></P>source		<P></P>destination		<P></P>protocol	<P></P>length		<P></P>info
+<P>
 <p>
 <img src="https://i.imgur.com/edUGvin.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
