@@ -1,5 +1,5 @@
 # Analyzing Traffic Between Azure Virtual Machines with WireShark
-<h5>In this lab I will create two Azure VMs and use Wireshark to analize traffic between the two VMs.</h5>
+<h5>In this lab I will create two Azure VMs and use Wireshark to analyze traffic between the two VMs.</h5>
 
 <p align="center">
 <img src="https://i.imgur.com/qYqLe8K.jpg" alt="WireShark logo"/>
